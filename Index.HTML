@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alma Sublianti Store - Toko Elektronik Online</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="#" class="logo">AlmaStore</a>
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+          ☰
+        </button>
+        <a href="#" class="cart-icon">
+          🛒
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+      <nav>
+        <div class="nav-container">
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#kategori">Kategori</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="beranda">
+        <section class="hero">
+          <h1>Selamat Datang di AlmaStore</h1>
+          <p>Temukan gadget dan elektronik terbaru dengan harga terjangkau</p>
+          <a href="#produk" class="cta-button">Belanja Sekarang</a>
+        </section>
+      </section>
+
+      <section id="produk">
+        <h2>Produk Terbaru</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image">📱</div>
+            <div class="product-info">
+              <h3 class="product-name">Samsung Galaxy S24FE</h3>
+              <p class="product-description">
+                Smartphone flagship dengan kamera 108MP, layar AMOLED 6.7", dan
+                performa gaming terdepan.
+              </p>
+              <div class="product-price">Rp 8.999.000</div>
+              <button class="add-to-cart" onclick="addToCart()">
+                Tambah ke Keranjang
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">💻</div>
+            <div class="product-info">
+              <h3 class="product-name">Asus ROG Strix G15</h3>
+              <p class="product-description">
+                Laptop gaming dengan prosesor Intel i7, RAM 16GB, dan GPU RTX
+                4060 untuk performa maksimal.
+              </p>
+              <div class="product-price">Rp 15.499.000</div>
+              <button class="add-to-cart" onclick="addToCart()">
+                Tambah ke Keranjang
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">🎧</div>
+            <div class="product-info">
+              <h3 class="product-name">Airpods 4 ANC</h3>
+              <p class="product-description">
+                Headphone nirkabel dengan noise cancelling, audio Hi-Fi, dan
+                baterai tahan 30 jam.
+              </p>
+              <div class="product-price">Rp 2.899.000</div>
+              <button class="add-to-cart" onclick="addToCart()">
+                Tambah ke Keranjang
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">⌚</div>
+            <div class="product-info">
+              <h3 class="product-name">Huwawei Watch Fit 4 Pro</h3>
+              <p class="product-description">
+                Smartwatch dengan fitur monitoring kesehatan lengkap, GPS, dan
+                tahan air IP68.
+              </p>
+              <div class="product-price">Rp 3.899.000</div>
+              <button class="add-to-cart" onclick="addToCart()">
+                Tambah ke Keranjang
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">📷</div>
+            <div class="product-info">
+              <h3 class="product-name">Sony A7II</h3>
+              <p class="product-description">
+                Kamera mirrorless dengan video 4K, autofocus cepat, dan
+                stabilizer 5-axis untuk foto profesional.
+              </p>
+              <div class="product-price">Rp 12.799.000</div>
+              <button class="add-to-cart" onclick="addToCart()">
+                Tambah ke Keranjang
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="kategori">
+        <h2>Kategori produk</h2>
+        <div class="categories">
+          <div class="category-card">
+            <div class="category-icon">📱</div>
+            <h3>Smartphone</h3>
+            <p>Android & iPhone terbaru</p>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">💻</div>
+            <h3>Laptop</h3>
+            <p>Gaming, Office, & Ultrabook</p>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">🎧</div>
+            <h3>Audio</h3>
+            <p>Headphone, Speaker, Earbuds</p>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">📷</div>
+            <h3>Kamera</h3>
+            <p>DSLR, Mirrorless, Action Cam</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tentang">
+        <h2>Tentang Kami</h2>
+        <div class="about-content">
+          <p>
+            AlmaStore adalah toko elektronik online terpercaya yang menyediakan
+            berbagai gadget dan perangkat teknologi terbaru dengan kualitas
+            terjamin.
+          </p>
+          <p>
+            Kami berkomitmen untuk memberikan pengalaman berbelanja yang mudah,
+            aman, dan memuaskan dengan layanan pelanggan terbaik dan jaminan
+            produk original.
+          </p>
+          <p>
+            Dengan pengalaman lebih dari 10 tahun di industri teknologi, kami
+            telah melayani ribuan pelanggan di seluruh Indonesia dengan kepuasan
+            mencapai 98%.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>AlmaStore</h3>
+          <p>
+            Toko elektronik online terpercaya dengan produk berkualitas dan
+            pelayanan terbaik.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Tautan Cepat</h3>
+          <p><a href="#">Beranda</a></p>
+          <p><a href="#produk">Produk</a></p>
+          <p><a href="#kategori">Kategori</a></p>
+          <p><a href="#tentang">Tentang Kami</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>Layanan</h3>
+          <p><a href="#">Bantuan</a></p>
+          <p><a href="#">Kebijakan Privasi</a></p>
+          <p><a href="#">Syarat & Ketentuan</a></p>
+          <p><a href="#">Pengembalian</a></p>
+        </div>
+        <div class="footer-section">
+          <section id="kontak">
+            <h3>Kontak</h3>
+            <p>Email: info@almastore.com</p>
+            <p>Telepon: (021) 123-4567</p>
+            <p>WhatsApp: +62 812-3456-7890</p>
+          </section>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 AlmaStore. Seluruh hak cipta dilindungi.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
